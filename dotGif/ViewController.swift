@@ -12,8 +12,6 @@ class ViewController: UIViewController {
     
     let dot = DotGif()
     
-    
-    
     @IBOutlet weak var dotGif: UIImageView!
     
     @IBAction func start(_ sender: UIButton) {
@@ -33,10 +31,6 @@ class ViewController: UIViewController {
         
         dot.imageView = dotGif
        
-//        let dot = DotGif(imageView: dotGif)
-//
-//        dot.runDotGif(action: .start)
-        
     }
 
 }

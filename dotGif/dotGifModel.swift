@@ -21,25 +21,7 @@ class DotGif {
     var timer = Timer()
     
     var imageView: UIImageView?
-    
-//    init() {
-//
-//        imageView?.alpha = 0.0
-//
-//    }
-
-//    init(imageView: UIImageView) {
-//
-//        self.imageView = imageView
-//
-//    }
-    
-//    init(image: UIImage) {
-//
-//        self.currentDotImage = image
-//
-//    }
-    
+ 
     var isStarted = false
     
     var currentNumber = 1
@@ -56,9 +38,9 @@ class DotGif {
         
         if action == .start && isStarted == false {
             
-            imageView?.alpha = 1.0
-            
             timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.animateDotGif), userInfo: nil, repeats: true)
+            
+            imageView?.alpha = 1.0
             
             isStarted = true
             
